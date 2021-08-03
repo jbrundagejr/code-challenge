@@ -1,6 +1,7 @@
 import {useEffect, useState} from 'react'
-import ArticleContainer from './ArticleContainer';
+import Header from './Header';
 import Search from './Search';
+import ArticleContainer from './ArticleContainer';
 
 function App() {
   const [articleArr, setArticleArr] = useState([])
@@ -29,9 +30,7 @@ function App() {
 
   return (
     <div>
-      <div id="headerContainer">
-        <h1>The Thrilling Times</h1>
-      </div>
+      <Header />
       <Search onSearch={handleSearch} searchArticle={searchArticle}/>
       <ArticleContainer articleArr={searchedArr}/>
     </div>

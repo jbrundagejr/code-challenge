@@ -5,16 +5,16 @@ function ArticleCard({article}){
 
   return (
     <div id="cardContainer">
-       <Item.Group>
+      <Item.Group>
           <Item>
             <Item.Content>
-              <Item.Header>{title}</Item.Header>
-              <Item.Meta>{byline}</Item.Meta>
-              <Item.Meta>Section: {section}</Item.Meta>
+              <h2>{title}</h2>
+              <Item.Meta><p>{byline}</p></Item.Meta>
+              <Item.Meta><p>Section: {section}</p></Item.Meta>
               <Item.Description>
-                {abstract}
+                <p>{abstract}</p>
               </Item.Description>
-              <Item.Extra as="a">{url}</Item.Extra>
+              <Item.Extra><a href={url}>View Article</a></Item.Extra>
             </Item.Content>
           </Item>
         </Item.Group>

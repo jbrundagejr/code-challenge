@@ -1,13 +1,81 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+h1{
+  font-size: 4em;
+  font-family: 'UnifrakturMaguntia', cursive;;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: 600;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h2{
+  font-size: 1.5em;
+  margin: 0;
+  font-family: 'Crimson Text', serif;
+}
+
+#headerContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 20%;
+  align-items: center;
+}
+
+.header{
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.headerSub{
+  display: flex;
+  flex-direction: row;
+}
+
+#searchContainer{
+  margin: 0 20%;
+  display: flex;
+  justify-content: flex-end;
+  border-top: double;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#searchInput{
+  width: 400px;
+  font-family: 'Crimson Text', serif;
+}
+
+#articleContainer{
+  margin: 0 20%;
+}
+
+#cardContainer{
+  padding-top: 20px;
+}
+
+p{
+  font-family: 'Crimson Text', serif;
+  font-size: 1.2em;
+}
+
+a{
+  font-family: 'Crimson Text', serif;
+  color: rgb(160, 159, 159);
+  font-size: 1.2em;
+}
+
+a:hover{
+  color: black;
+}
+
+.ui.items>.item .meta {
+  margin: 0;
+}
+
+.ui.items>.item>.content>.description {
+  margin: 0;
+}
+
+.ui.items>.item .extra {
+  margin: 0;
 }

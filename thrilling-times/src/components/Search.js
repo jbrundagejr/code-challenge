@@ -4,7 +4,8 @@ function Search({onSearch, searchArticle}){
 
   return (
     <div id="searchContainer">
-      <Input 
+      <Input
+        id="searchInput" 
         onChange={e => onSearch(e.target.value)} 
         value={searchArticle}
         placeholder="Search by title, byline or section..."/>
