@@ -12,7 +12,6 @@ function App() {
     .then(res => res.json())
     .then(resp => {
       setArticleArr(resp.results)
-      console.log(resp.results)
     })
   }, [])
 

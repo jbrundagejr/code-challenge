@@ -9,12 +9,18 @@ function ArticleCard({article}){
           <Item>
             <Item.Content>
               <h2>{title}</h2>
-              <Item.Meta><p>{byline}</p></Item.Meta>
-              <Item.Meta><p>Section: {section}</p></Item.Meta>
+              <Item.Meta>
+                <p>{byline}</p>
+              </Item.Meta>
+              <Item.Meta>
+                <p>Section: {section}</p>
+              </Item.Meta>
               <Item.Description>
                 <p>{abstract}</p>
               </Item.Description>
-              <Item.Extra><a href={url} target="_blank" rel="noreferrer">View Article</a></Item.Extra>
+              <Item.Extra>
+                <a href={url} target="_blank" rel="noreferrer">View Article</a>
+              </Item.Extra>
             </Item.Content>
           </Item>
         </Item.Group>
