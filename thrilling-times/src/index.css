@@ -60,9 +60,9 @@ p{
 }
 
 a{
-  font-family: 'Crimson Text', serif;
+  font-family: 'Libre Franklin', sans-serif;
   color: rgb(160, 159, 159);
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 a:hover{
