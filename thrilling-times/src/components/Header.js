@@ -1,6 +1,7 @@
 import {Icon} from 'semantic-ui-react'
 
 function Header(){
+
   return (
     <div id="headerContainer">
       <p className="header">August 3, 2021</p>
