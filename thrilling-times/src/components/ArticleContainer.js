@@ -1,10 +1,14 @@
+import {} from 'semantic-ui-react'
 import ArticleCard from "./ArticleCard"
 
-function ArticleContainer(){
+function ArticleContainer({articleArr}){
+
+  const articleArray = articleArr.map(articleObj => {
+    return <ArticleCard key={articleObj.id} article={articleObj} />
+  })
   return (
-    <div>
-      <h2>Article Container</h2>
-      <ArticleCard />
+    <div id="articleContainer">
+      {articleArray}
     </div>
   )
 }

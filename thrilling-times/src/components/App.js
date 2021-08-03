@@ -19,14 +19,21 @@ function App() {
     setSearchArticle(e)
   }
 
-  // const searchedArr = articleArr.filter(articleObj => {
-  //   if()
-  // })
+  const searchedArr = articleArr.filter(articleObj => {
+    if(articleObj.title.toLowerCase().includes(searchArticle.toLowerCase())){
+      return true
+    } else if (articleObj.byline.toLowerCase().includes(searchArticle.toLowerCase())){
+      return true
+    } else {return articleObj.section.toLowerCase().includes(searchArticle.toLowerCase())}
+  })
 
   return (
     <div>
+      <div id="headerContainer">
+        <h1>The Thrilling Times</h1>
+      </div>
       <Search onSearch={handleSearch} searchArticle={searchArticle}/>
-      <ArticleContainer />
+      <ArticleContainer articleArr={searchedArr}/>
     </div>
   );
 }
