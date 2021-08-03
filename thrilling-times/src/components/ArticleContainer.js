@@ -8,7 +8,7 @@ function ArticleContainer({articleArr}){
   })
   return (
     <div id="articleContainer">
-      {articleArray}
+      {articleArray.length > 0 ? articleArray : <p>There are no articles matching that search.</p>}
     </div>
   )
 }

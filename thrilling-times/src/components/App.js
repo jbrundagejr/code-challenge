@@ -29,7 +29,7 @@ function App() {
   })
 
   return (
-    <div>
+    <div id="siteContainer">
       <Header />
       <Search onSearch={handleSearch} searchArticle={searchArticle}/>
       <ArticleContainer articleArr={searchedArr}/>
