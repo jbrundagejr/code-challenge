@@ -14,7 +14,7 @@ function ArticleCard({article}){
               <Item.Description>
                 <p>{abstract}</p>
               </Item.Description>
-              <Item.Extra><a href={url}>View Article</a></Item.Extra>
+              <Item.Extra><a href={url} target="_blank" rel="noreferrer">View Article</a></Item.Extra>
             </Item.Content>
           </Item>
         </Item.Group>
