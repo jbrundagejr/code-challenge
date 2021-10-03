@@ -3,9 +3,13 @@ import {Item} from 'semantic-ui-react'
 function ArticleCard({article}){
   const {title, section, byline, abstract, url} = article
 
+  const capitalizedSection = (artricleSection) => {
+    if(artricleSection.length < 3) return artricleSection.toUpperCase()
+    return artricleSection[0].toUpperCase() + artricleSection.substring(1)
+  }
+
   return (
     <div id="cardContainer">
-      <Item.Group>
           <Item>
             <Item.Content>
               <h2>{title}</h2>
@@ -13,7 +17,7 @@ function ArticleCard({article}){
                 <p>{byline}</p>
               </Item.Meta>
               <Item.Meta>
-                <p>Section: {section}</p>
+                <p>Section: {capitalizedSection(section)}</p>
               </Item.Meta>
               <Item.Description>
                 <p>{abstract}</p>
@@ -23,7 +27,6 @@ function ArticleCard({article}){
               </Item.Extra>
             </Item.Content>
           </Item>
-        </Item.Group>
     </div>
   )
 }

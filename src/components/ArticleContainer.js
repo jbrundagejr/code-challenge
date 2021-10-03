@@ -1,4 +1,4 @@
-import {} from 'semantic-ui-react'
+import {Item} from 'semantic-ui-react'
 import ArticleCard from "./ArticleCard"
 
 function ArticleContainer({articleArr}){
@@ -9,7 +9,9 @@ function ArticleContainer({articleArr}){
   
   return (
     <div id="articleContainer">
-      {articleArray.length > 0 ? articleArray : <p>There are no articles matching that search.</p>}
+      <Item.Group>
+        {articleArray.length > 0 ? articleArray : <p>There are no articles matching that search.</p>}
+      </Item.Group>
     </div>
   )
 }
